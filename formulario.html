@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://kit.fontawesome.com/f6604c4886.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="body">
+    <div class="padre">
+       <!-- parte superior -->
+       <header class="header">  
+           <div class="menu margen-interno">
+               <div class="logo">
+                   <a href="index.html">
+                    <img src="img/Logo-Wolha.png" alt="">Wolha</i>
+                   </a>
+               </div>
+               <nav class="nav">
+                   <a href="index.html">Inicio</a>
+                   <a href="#">Nosotros</a>
+                   <a href="#">servicios</a>
+                   <a href="noticias-pag-1.html">Noticias</a>
+                   <a href="formulario.html">Contactanos</a>
+               </nav>
+               <div class="social">
+                   <div>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                   </div>
+                   <div><a href="#"><i class="fab fa-twitter"></i></a></div>
+                   <div><a href="#"><i class="fab fa-discord"></i></a></div>
+               </div>
+           </div>
+           <div class="text-arriba margen-interno">
+               <h1 class="format-arriba">Contactanos para mas noticias</h1>
+            </div>
+       </header>
+       <!-- Formulario -->
+          <div class="contenedor-formulario">
+              <div class="wrap">
+                <form action="" class="formulario" id="formulario">
+                    <!-- Grupo: Usuario -->
+                    <div class="formulario__grupo" id="grupo__usuario">
+                        <label for="usuario" class="formulario__label">Usuario</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="aaa123">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+                    </div>
+        
+                    <!-- Grupo: Nombre -->
+                    <div class="formulario__grupo" id="grupo__nombre">
+                        <label for="nombre" class="formulario__label">Nombre</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Natalia natalia">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+                    </div>
+        
+                    <!-- Grupo: Contraseña -->
+                    <div class="formulario__grupo" id="grupo__password">
+                        <label for="password" class="formulario__label">Contraseña</label>
+                        <div class="formulario__grupo-input">
+                            <input type="password" class="formulario__input" name="password" id="password" placeholder="**********">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">La contraseña tiene que ser de 4 a 16 dígitos.</p>
+                    </div>
+        
+                    <!-- Grupo: Contraseña 2 -->
+                    <div class="formulario__grupo" id="grupo__password2">
+                        <label for="password2" class="formulario__label">Repetir Contraseña</label>
+                        <div class="formulario__grupo-input">
+                            <input type="password" class="formulario__input" name="password2" id="password2" placeholder="**********">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+                    </div>
+        
+                    <!-- Grupo: Correo Electronico -->
+                    <div class="formulario__grupo" id="grupo__correo">
+                        <label for="correo" class="formulario__label">Correo Electrónico</label>
+                        <div class="formulario__grupo-input">
+                            <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@gmail.com">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">Escriba un correo electronico válido.</p>
+                    </div>
+        
+                    <!-- Grupo: Teléfono -->
+                    <div class="formulario__grupo" id="grupo__telefono">
+                        <label for="telefono" class="formulario__label">Teléfono</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="1122334455">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+                    </div>
+        
+                    <!-- Grupo: Terminos y Condiciones -->
+                    <div class="formulario__grupo" id="grupo__terminos">
+                        <label class="formulario__label">
+                            <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                            Acepto los Terminos y Condiciones
+                        </label>
+                    </div>
+        
+                    <div class="formulario__mensaje" id="formulario__mensaje">
+                        <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+                    </div>
+        
+                    <div class="formulario__grupo formulario__grupo-btn-enviar">
+                        <button type="submit" class="formulario__btn">Enviar</button>
+                        <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+                    </div>
+                </form>
+              </div>
+           
+          </div>
+      
+    <footer>
+        <div class="footer-bajo">
+            <div class="footer-logo">
+                <img src="img/Logo-Wolha.png" alt="logo" >
+                <p>Wolha</p>
+                <p>TPO Codo a Codo 2021</p>
+            </div>
+            <ul>
+                <li>
+                    <H2>Principal</H2>
+                </li>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="#">Nosotros</a>
+                </li>
+                <li>
+                    <a href="noticias-pag-1.html">Noticias</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <H2>Enlaces</H2>
+                </li>
+                <li>
+                    <a href="#">Servicios</a>
+                </li>
+                <li>
+                    <a href="noticias-pag-1.html">Noticias</a>
+                </li>
+                <li>
+                    <a href="formulario.html">contactanos</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <H2>Contacto</H2>
+                </li>
+                <li>
+                    <a href="#">Facebook</a>
+                </li>
+                <li>
+                    <a href="#">Twitter</a>
+                </li>
+                <li>
+                    <a href="#">Discord</a>
+                </li>
+            </ul>
+        </div>
+        
+    </footer>
+    </div>
+  
+<script src="js/main.js"></script>
+</body>
+</html>
+
+
